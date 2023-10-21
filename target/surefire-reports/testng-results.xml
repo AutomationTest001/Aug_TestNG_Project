@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Test Case Passed : Test Case to verify Login functionality for Admin User]]>
+    </line>
+    <line>
+      <![CDATA[loginOrangeHRM Executed]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Passed : Verify Login Functionalty]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Passed : Test Case to verify Login functionality for test User]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Passed : Test Case to verify Login functionality for JSmith User]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27049" started-at="2023-10-21T11:48:11 IST" finished-at="2023-10-21T11:48:38 IST">
+    <groups>
+      <group name="LoginTest">
+        <method signature="LoginTestCase.adminLoginTest()[pri:0, instance:com.itview.testng.LoginTestCase@4d41cee]" name="adminLoginTest" class="com.itview.testng.LoginTestCase"/>
+        <method signature="LoginTestCase.jsmithLoginTest()[pri:2, instance:com.itview.testng.LoginTestCase@4d41cee]" name="jsmithLoginTest" class="com.itview.testng.LoginTestCase"/>
+        <method signature="LoginTestCase.testLoginTest()[pri:1, instance:com.itview.testng.LoginTestCase@4d41cee]" name="testLoginTest" class="com.itview.testng.LoginTestCase"/>
+      </group> <!-- LoginTest -->
+    </groups>
+    <test name="Orange HRM Test" duration-ms="21852" started-at="2023-10-21T11:48:11 IST" finished-at="2023-10-21T11:48:33 IST">
+      <class name="com.itview.testng.OrangeHRM">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.itview.testng.OrangeHRM@631330c]" name="openBrowser" is-config="true" duration-ms="5185" started-at="2023-10-21T11:48:11 IST" finished-at="2023-10-21T11:48:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginOrangeHRM()[pri:0, instance:com.itview.testng.OrangeHRM@631330c]" name="loginOrangeHRM" duration-ms="15906" started-at="2023-10-21T11:48:17 IST" description="Verify Login Functionalty" finished-at="2023-10-21T11:48:32 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[loginOrangeHRM Executed]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Passed : Verify Login Functionalty]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginOrangeHRM -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.itview.testng.OrangeHRM@631330c]" name="closeBrowser" is-config="true" duration-ms="717" started-at="2023-10-21T11:48:32 IST" finished-at="2023-10-21T11:48:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.itview.testng.OrangeHRM -->
+    </test> <!-- Orange HRM Test -->
+    <test name="Mutual Fund Test" duration-ms="27049" started-at="2023-10-21T11:48:11 IST" finished-at="2023-10-21T11:48:38 IST">
+      <class name="com.itview.testng.LoginTestCase">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.itview.testng.LoginTestCase@4d41cee]" name="preCondition" is-config="true" duration-ms="5185" started-at="2023-10-21T11:48:11 IST" finished-at="2023-10-21T11:48:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="adminLoginTest()[pri:0, instance:com.itview.testng.LoginTestCase@4d41cee]" name="adminLoginTest" duration-ms="13969" started-at="2023-10-21T11:48:17 IST" description="Test Case to verify Login functionality for Admin User" finished-at="2023-10-21T11:48:31 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Passed : Test Case to verify Login functionality for Admin User]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- adminLoginTest -->
+        <test-method status="PASS" signature="testLoginTest()[pri:1, instance:com.itview.testng.LoginTestCase@4d41cee]" name="testLoginTest" duration-ms="3950" started-at="2023-10-21T11:48:31 IST" description="Test Case to verify Login functionality for test User" depends-on-methods="com.itview.testng.LoginTestCase.adminLoginTest" finished-at="2023-10-21T11:48:35 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Passed : Test Case to verify Login functionality for test User]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLoginTest -->
+        <test-method status="PASS" signature="jsmithLoginTest()[pri:2, instance:com.itview.testng.LoginTestCase@4d41cee]" name="jsmithLoginTest" duration-ms="3869" started-at="2023-10-21T11:48:35 IST" description="Test Case to verify Login functionality for JSmith User" depends-on-methods="com.itview.testng.LoginTestCase.adminLoginTest" finished-at="2023-10-21T11:48:38 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Passed : Test Case to verify Login functionality for JSmith User]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- jsmithLoginTest -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.itview.testng.LoginTestCase@4d41cee]" name="postCondition" is-config="true" duration-ms="2" started-at="2023-10-21T11:48:38 IST" finished-at="2023-10-21T11:48:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.itview.testng.LoginTestCase -->
+    </test> <!-- Mutual Fund Test -->
+  </suite> <!-- Suite -->
+</testng-results>
